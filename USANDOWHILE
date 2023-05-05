@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        int frango = 0;
+        int f1 = 0;
+          
+               System.out.println("Quantos pacotes de frango?: ");
+                 frango = sc.nextInt();
+        
+        if (frango >= 20) {
+            System.out.println("Não há espaço");
+        }
+          else {
+            while (frango <= 20)  {
+                
+                System.out.println("Adicionar quantos pacotes: ");
+                f1 = sc.nextInt();
+                frango = (frango + f1);
+                
+                System.out.println(" ");
+                System.out.println("Você tem um total de: " + frango);
+                if (frango >= 20) {
+                    
+                    System.out.println("Sem limites.");
+                    break;
+                    }
+                    
+                }
+            }
+        }
+    }
